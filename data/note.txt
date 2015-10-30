@@ -1,0 +1,9 @@
+word find and replace
+
+find: (#label#:[1,2,4,5]{1}.0)
+replace: \1^p
+
+also removed quotation marks
+
+removed weird box symbols (ASCII non-printing characters) from entry that starts "q:1 in:17"
+
