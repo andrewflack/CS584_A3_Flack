@@ -49,7 +49,7 @@ rpart_predict <- predict(fit_rpart, test_df)
 
 # convert rpart_predict to dataframe, add id column, and rename rating column
 submit2 <- cbind(id = rownames(as.data.frame(rpart_predict)), as.data.frame(rpart_predict))
-colnames(submit2) <- c("id", "rating")
+colnames(submit2) <- c("id", "category")
 
 # write to csv
 write.csv(submit2, "submissions/submit2_rpart.csv", row.names = FALSE)

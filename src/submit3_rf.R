@@ -51,7 +51,7 @@ rf_predict <- predict(fit_rf, test_df)
 
 # convert rf_predict to dataframe, add id column, and rename rating column
 submit3 <- cbind(id = rownames(as.data.frame(rf_predict)), as.data.frame(rf_predict))
-colnames(submit3) <- c("id", "rating")
+colnames(submit3) <- c("id", "category")
 
 # write to csv
 write.csv(submit3, "submissions/submit3_rf.csv", row.names = FALSE)

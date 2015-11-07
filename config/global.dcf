@@ -2,7 +2,7 @@ version: 0.6
 data_loading: FALSE
 cache_loading: TRUE
 recursive_loading: FALSE
-munging: FALSE
+munging: TRUE
 logging: FALSE
 load_libraries: TRUE
 libraries: reshape, plyr, dplyr, ggplot2, tm, randomForest, SnowballC, caret, e1071

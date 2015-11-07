@@ -38,6 +38,10 @@ train_df <- as.data.frame(train_m)
 train_df$id <- seq.int(nrow(train_df))
 train_df <- left_join(train_df, df[,c("id","rating")], by = "id")
 
+# add positive/negative flag 
+train_df <- train_df %>% 
+  mutate(pos_flag = ifelse(as.numeric(rating) > 2, 1, 0))
+
 # check dataframe
 summary(train_df)
 
