@@ -53,13 +53,14 @@ summary(train_df)
 # tmp <- strsplit(unlist(tmp), ":")
 # df <- as.data.frame(do.call(rbind, tmp))
 # colnames(df) <- c("term", "n")
+# df$n <- as.numeric(df$n)
 # 
 # df %>% 
 #   group_by(term) %>% 
 #   summarize(freq = sum(n)) %>%
 #   arrange(desc(freq)) %>%
 #   head(20)
-# 
+
 # #########
 
 
